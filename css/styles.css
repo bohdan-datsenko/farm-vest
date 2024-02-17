@@ -857,6 +857,7 @@ h1, h2, h3, h4, h5, h6 {
     visibility: collapse;
     right: -100%;
     height: 0;
+    width: 0;
   }
 }
 .header-menu__list {
@@ -1100,7 +1101,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 [class*=__container-big] {
-  max-width: 90pxrem;
+  max-width: 90rem;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }
@@ -1222,7 +1223,7 @@ h1, h2, h3, h4, h5, h6 {
     height: calc(234px + 351 * (100vw - 320px) / (1620 - 320));
   }
 }
-@media (max-width: 1650px) {
+@media (max-width: 1650) {
   .hero-icons > div:nth-child(1) {
     translate: calc(-34.8px + -81.2 * (100vw - 320px) / (1920 - 320)) calc(-78.3px + -182.7 * (100vw - 320px) / (1920 - 320));
   }
@@ -1244,7 +1245,7 @@ h1, h2, h3, h4, h5, h6 {
     height: calc(234px + 351 * (100vw - 320px) / (1620 - 320));
   }
 }
-@media (max-width: 1650px) {
+@media (max-width: 1650) {
   .hero-icons > div:nth-child(2) {
     translate: calc(-51.3px + -119.7 * (100vw - 320px) / (1920 - 320)) calc(-61.8px + -144.2 * (100vw - 320px) / (1920 - 320));
   }
