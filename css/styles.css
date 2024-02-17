@@ -1382,13 +1382,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .how .circle-icon1 {
   top: 0;
-  right: calc(-50% + 0.8888888889rem);
-  translate: 0 -6.2316666667rem;
+  left: calc(-50% + 0.8888888889rem);
 }
 .how .circle-icon2 {
   top: 0;
-  right: calc(-50% + 1.0555555556rem);
-  translate: 0 -1.9138888889rem;
+  left: calc(-50% + 1.0555555556rem);
 }
 
 /*  */
