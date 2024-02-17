@@ -265,13 +265,11 @@
     // todo right to translate
     .circle-icon1 {
         top: 0;
-        right: calc(-50% + rem(16));
-        translate: 0 rem(-112.17);
+        left: calc(-50% + rem(16));
     }
     .circle-icon2 {
         top: 0;
-        right: calc(-50% + rem(19));
-        translate: 0 rem(-34.45);
+        left: calc(-50% + rem(19));
     }
 }
 /*  */
