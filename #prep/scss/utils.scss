@@ -1,0 +1,58 @@
+// todo
+// prlx mouse
+// slider
+// burger
+// header-scroll
+// spoiler
+
+/* functions */
+@function percent($parentPx, $px) {
+    @return math.div($parentPx, $px) * 100%;
+}
+
+@function rem($px) {
+    @return math.div($px, $fontSize) + rem;
+}
+
+@function em($px) {
+    @return math.div($px, $defaultFontSize) + em;
+}
+/*  */
+
+/* mixins */
+$maxWidth: 1920;
+$maxContainerWidth: 1620;
+
+@function calculate($minSize, $addSize, $maxWidth) {
+    @return calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / (#{$maxWidth} - 320)));
+}
+
+@mixin adaptiveProperty($property, $startSize, $minSize, $type: 1) {
+    $addSize: $startSize - $minSize;
+    
+    @if $type == 1 {
+        #{$property}: $startSize + px;
+        @media (max-width: #{$maxContainerWidth + px}) {
+            #{$property}: calculate($minSize, $addSize, $maxContainerWidth);
+        }
+    } @else if($type == 2) {
+        #{$property}: $startSize + px;
+        @media (max-width: #{$maxWidth}) {
+            #{$property}: calculate($minSize, $addSize, $maxWidth);
+        } 
+    } @else {
+        #{$property}: calculate($minSize, $addSize, $maxWidth);
+    }
+}
+
+@function adaptiveValue($startSize, $minSize, $type: 1) {
+    $addSize: $startSize - $minSize;
+    $result: 0;
+
+    @if $type == 1 {
+        @return calculate($minSize, $addSize, $maxContainerWidth);
+    } @else {
+        @return calculate($minSize, $addSize, $maxWidth);
+    }
+}
+/*  */

@@ -1,0 +1,5 @@
+.accordion {
+    &-item.opened &-item__content {
+        max-height: rem(500);
+    }
+}

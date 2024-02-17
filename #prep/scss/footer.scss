@@ -1,0 +1,95 @@
+.footer {
+    background: rgba(53, 64, 70, 0.50);
+    &-main {
+        padding: adaptiveValue(68, 20.4) 0;
+        display: grid;
+        grid-template-columns: 21.39% 32.30% auto;
+        justify-content: space-between;
+        align-items: flex-start;
+        @media (max-width: rem(1300)) {
+            grid-template-columns: minmax(40%, 50%) 1fr;
+            grid-template-rows: 1fr 1fr;
+            row-gap: rem(48);
+            column-gap: rem(26);
+        }
+        @media(max-width: $tablet) {
+            grid-template-columns: 80%;
+            grid-template-rows: auto;
+            justify-content: center;
+        }
+        @media(max-width: $mobileSmall) {
+            grid-template-columns: auto;
+            grid-template-rows: 1fr;
+        }
+    }
+    &-bottom {
+        // @include adaptiveProperty('padding', 56, 28);
+        @include adaptiveProperty('padding-top', 41, 20.5);
+        @include adaptiveProperty('padding-bottom', 41, 20.5);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media(max-width: $mobile) {
+            flex-direction: column-reverse;
+            row-gap: rem(28);
+        }
+    }
+    &-subscribe {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(24);
+    }
+    &-contacts {
+        @include adaptiveProperty('column-gap', 48, 24);
+        display: flex;
+        @media(max-width: $mobileSmall) {
+            flex-direction: column;
+            row-gap: rem(26);
+        }
+    }
+    &-contacts > div {
+        @include adaptiveProperty('row-gap', 24, 12);
+        display: flex;
+        flex-direction: column;
+    }
+    .call-us__link {
+        color: $mainColor;
+        font-size: rem(16);
+        line-height: normal;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &-logo {
+        display: flex;
+        column-gap: rem(6);
+    }
+    &-about {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(24);
+    }
+    &-nav {
+        &__list {
+            @include adaptiveProperty('column-gap', 40, 20);
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: rem(20);
+            row-gap: rem(30);
+            text-align: center;
+        }
+        &__link {
+            color: $mainColor;
+            font-size: rem(14);
+            font-weight: 400;
+            line-height: normal;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .follow-us__icons {
+        display: flex;
+        column-gap: rem(16);
+    }
+}

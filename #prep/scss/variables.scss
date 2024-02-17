@@ -1,0 +1,29 @@
+// colors
+$mainColor: #fff;
+$colorGreen: #23B123;
+$backgroundGray: rgba(255, 255, 255, 0.05);
+
+// font by default
+$fontFamily: 'League-Spartan', sans-serif;
+$defaultFontSize: 16;
+$fontSize: 18;
+
+// width
+$minWidth: 320;
+$maxWidth: 1920;
+$maxWidthContainer: 1620px;
+$contentWidthContainer: 1420px;
+$containerPadding: 30px;
+$containerWidth: $maxWidthContainer + $containerPadding;
+$contentContainerWidth: $contentWidthContainer + $containerPadding;
+
+// break-points
+$pc: em($containerWidth);
+$tablet: em(991.98);
+$mobile: em(767.98);
+$mobileSmall: em(479.98);
+
+// adaptive type
+// 1 = responsive
+// 2 = break-points
+$responsiveType: 1;
