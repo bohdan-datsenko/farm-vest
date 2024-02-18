@@ -1,4 +1,18 @@
 .accordion {
+    display: flex;
+    flex-direction: column;
+    &-item {
+        overflow: hidden;
+        &__title {
+            cursor: pointer;
+        }
+        &__content {
+            display: flex; // ? should be flex?
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 1s ease-in-out;
+        }
+    }
     &-item.opened &-item__content {
         max-height: rem(500);
     }

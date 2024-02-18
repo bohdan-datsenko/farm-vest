@@ -295,7 +295,6 @@
         padding: adaptiveValue(100, 20, 2) adaptiveValue(40, 8, 2);
     }
 
-    // todo right to translate
     .circle-icon1 {
         top: 29.63%;
         left: -29.79%;
@@ -309,19 +308,14 @@
         @include adaptiveProperty('height', 525, 365);
     }
     .accordion {
-        display: flex;
-        flex-direction: column;
         row-gap: rem(24);
-        // move to common? todo
         &-item {
             border-radius: rem(10);
-            overflow: hidden;
             &__title {
-                cursor: pointer;
                 padding: adaptiveValue(24, 9.6, 2) adaptiveValue(30, 12, 2);
 
                 font-size: rem(24);
-                line-height: 177%; /* 42.48px */
+                line-height: 177%;
 
                 background: $backgroundGray;
                 background-image: url('../../images/pathway/arrow-down.svg');
@@ -330,11 +324,7 @@
                 background-position-x: 96%;
             }
             &__content {
-                display: flex;
-                overflow: hidden;
-                max-height: 0;
                 background-color: rgba(141, 141, 141, 0.05);
-                transition: max-height 1s ease-in-out;
                 p {
                     padding: adaptiveValue(15, 10) adaptiveValue(15, 5);
                     margin-bottom: 0;
