@@ -318,7 +318,7 @@
             overflow: hidden;
             &__title {
                 cursor: pointer;
-                padding: adaptiveValue(24, 4.8, 2) adaptiveValue(30, 6, 2);
+                padding: adaptiveValue(24, 9.6, 2) adaptiveValue(30, 12, 2);
 
                 font-size: rem(24);
                 line-height: 177%; /* 42.48px */

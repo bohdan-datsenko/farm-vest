@@ -7,14 +7,14 @@
     position: absolute;
     width: 100%;
     z-index: 50;
-    @include adaptiveProperty('padding-top', 60, 20);
-    @include adaptiveProperty('padding-bottom', 60, 20);
+    @include adaptiveProperty('padding-top', 60, 15);
+    @include adaptiveProperty('padding-bottom', 60, 15);
     &__container-big {
         position: relative;
     }
     &-scroll {
-        padding-top: rem(20);
-        padding-bottom: rem(20);
+        padding-top: rem(15);
+        padding-bottom: rem(15);
 
     }
     &__container-big {

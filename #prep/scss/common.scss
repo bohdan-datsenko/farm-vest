@@ -61,8 +61,6 @@
         flex: 1 1 auto;
         min-width: 0;
     }
-    &__btn {
-    } 
     &__inputs {
         display: flex;
         padding: rem(3);
@@ -209,9 +207,6 @@
     overflow: hidden;
     max-width: rem(686);
     width: 100%;
-    // @media(max-width: $tablet) {
-    //     flex-direction: column;
-    // }
     @media(max-width: $mobileSmall) {
         flex-direction: column;
     }
