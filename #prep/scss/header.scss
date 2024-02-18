@@ -21,7 +21,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @media(max-width: rem(1100)) { // todo
+        @media(max-width: rem(1100)) {
             grid-template-columns: repeat(3, auto);
             justify-content: space-between;
         }
